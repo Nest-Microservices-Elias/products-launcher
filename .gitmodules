@@ -5,3 +5,7 @@
 [submodule "products-ms"]
 	path = products-ms
 	url = https://github.com/Nest-Microservices-Elias/products-microservice.git
+	branch = feat/TG-02
+[submodule "orders-ms"]
+	path = orders-ms
+	url = https://github.com/Nest-Microservices-Elias/orders-microservice.git
