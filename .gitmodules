@@ -1,0 +1,4 @@
+[submodule "client-gateway"]
+	path = client-gateway
+	url = https://github.com/Nest-Microservices-Elias/client-gateway
+	branch = feat/TG-02
