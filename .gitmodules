@@ -2,3 +2,6 @@
 	path = client-gateway
 	url = https://github.com/Nest-Microservices-Elias/client-gateway
 	branch = feat/TG-02
+[submodule "products-ms"]
+	path = products-ms
+	url = https://github.com/Nest-Microservices-Elias/products-microservice.git
