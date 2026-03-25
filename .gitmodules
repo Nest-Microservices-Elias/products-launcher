@@ -10,3 +10,7 @@
 	path = orders-ms
 	url = https://github.com/Nest-Microservices-Elias/orders-microservice.git
 	branch = feat/TG-03
+[submodule "payments-ms"]
+	path = payments-ms
+	url = https://github.com/Nest-Microservices-Elias/payments-ms.git
+	branch = feat/TG-01
