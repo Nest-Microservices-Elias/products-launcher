@@ -17,3 +17,4 @@
 [submodule "auth-ms"]
 	path = auth-ms
 	url = https://github.com/Nest-Microservices-Elias/auth-ms.git
+	branch = feat/TG-01
