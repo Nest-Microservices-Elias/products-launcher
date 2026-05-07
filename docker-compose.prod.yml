@@ -7,7 +7,7 @@ services:
     build: 
       context: ./client-gateway
       dockerfile: dockerfile.prod
-    image: client-gateway-prod
+    image: eliasmgdev7/client-gateway-ms:1.0
     ports:
       - ${CLIENT_GATEWAY_PORT}:${CLIENT_GATEWAY_PORT}
     environment:
@@ -18,7 +18,7 @@ services:
     build:
       context: ./auth-ms
       dockerfile: dockerfile.prod
-    image: auth-ms-prod
+    image: eliasmgdev7/auth-ms:1.0
     environment:
       - PORT=3000
       - NATS_SERVERS=nats://nats-server:4222
@@ -30,7 +30,7 @@ services:
       args:
         - PRODUCTS_DATABASE_URL=${PRODUCTS_DATABASE_URL}
       dockerfile: dockerfile.prod
-    image: products-ms-prod
+    image: eliasmgdev7/products-ms:1.0
     environment:
       - PORT=3001
       - NATS_SERVERS=nats://nats-server:4222
@@ -42,7 +42,7 @@ services:
       dockerfile: dockerfile.prod
       args:
         - ORDERS_DATABASE_URL=${ORDERS_DATABASE_URL}
-    image: orders-ms-prod
+    image: eliasmgdev7/orders-ms:1.0
     environment:
       - PORT=3000
       - DATABASE_URL=${ORDERS_DATABASE_URL}
@@ -67,7 +67,7 @@ services:
     build:
       context: ./payments-ms
       dockerfile: dockerfile.prod
-    image: payments-ms-prod
+    image: eliasmgdev7/payments-ms:1.0
     ports:
       - ${PAYMENTS_MS_PORT}:${PAYMENTS_MS_PORT}
     environment:
